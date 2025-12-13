@@ -9,4 +9,11 @@ public class CycleDetect {
         }
         return false;
     }
+    public static void main(String[] args){
+        Node n1=new Node(1);
+        Node n2=new Node(2);
+        Node n3=new Node(3);
+        n1.next=n2; n2.next=n3; n3.next=n1; // creates a cycle
+        System.out.println(hasCycle(n1)); // should print true
+    }
 }

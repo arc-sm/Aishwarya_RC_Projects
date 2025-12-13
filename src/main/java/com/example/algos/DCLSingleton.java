@@ -10,4 +10,11 @@ public class DCLSingleton {
         }
         return instance;
     }
+    public void showMessage(){
+        System.out.println("DCL Singleton Instance");
+    }
+    public static void main(String[] args){
+        DCLSingleton singleton = DCLSingleton.getInstance();
+        singleton.showMessage();
+    }
 }
